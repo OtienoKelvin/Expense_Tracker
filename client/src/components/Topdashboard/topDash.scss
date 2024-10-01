@@ -1,0 +1,53 @@
+@import "../../Global.scss";
+
+.top-dash {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px ;
+
+    .greet {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+
+        .greeting {
+            font-size: 1.8rem;
+            color: var(--blue);
+            font-weight: 500;
+        }
+    }
+
+    .top-cards {
+        display: flex;
+        gap: 10px;
+        height: 120px;
+        margin-top: 10px;
+
+        .card {
+            flex: 1;
+            padding: 5px 10px;
+            border-radius: 10px;
+            color: white;
+            background-color: var(--primary-color);
+
+            .balance-info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .expense {
+                    font-size: 1.5rem;
+                    margin-top: 10px;
+                }
+
+                .percentage-increase {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+      
+}

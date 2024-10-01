@@ -1,0 +1,43 @@
+@import "../../../Global.scss";
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    padding: 10px 20px;
+
+    .logo {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--primary-color);
+        padding-right: 20px;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap : 20px;
+
+        .notification {
+            display: flex;
+            align-items: center;
+            color: var(--blue);
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+}

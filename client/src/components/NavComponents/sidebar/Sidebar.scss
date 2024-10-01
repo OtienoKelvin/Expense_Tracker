@@ -1,0 +1,40 @@
+@import "../../../Global.scss";
+
+
+.sidebar {
+    display: flex;
+    height: calc(100vh - 76px);
+
+    .nav-links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .link {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: var(--light-gray);
+                .nav-link {color: white;}
+            }
+
+            .nav-link {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: var(--text-color);
+            }
+
+        }
+
+        .link.active {
+            background-color: var(--blue);
+            .nav-link {color: white;}
+        }
+        
+    }
+    
+}

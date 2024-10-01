@@ -1,0 +1,25 @@
+@import "../Global.scss";
+
+.layout {
+    .top-nav {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .container {
+        display: flex;
+
+        .sidebar-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+            
+        }
+
+        .main-content {
+            flex: 5;
+        }
+    }
+}
